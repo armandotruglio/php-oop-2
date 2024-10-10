@@ -4,9 +4,13 @@ require_once __DIR__ . "/classes/category/Category.php";
 require_once __DIR__ . "/classes/category/Cats.php";
 require_once __DIR__ . "/classes/category/Dogs.php";
 require_once __DIR__ . "/classes/product/Product.php";
+require_once __DIR__ . "/classes/product/Food.php";
+require_once __DIR__ . "/classes/product/Kennel.php";
+require_once __DIR__ . "/classes/product/Toy.php";
 
 
-$product = new Product("Spazzola", "https://www.wowgrooming.co.uk/cdn/shop/articles/Long_Pin_Brush_800x.png?v=1620598039", "15,55$", new Dogs());
+
+$product = new Toy("Osso", "https://www.wowgrooming.co.uk/cdn/shop/articles/Long_Pin_Brush_800x.png?v=1620598039", "15,55$", new Dogs());
 
 ?>
 
