@@ -1,0 +1,58 @@
+[
+    {
+        "tipo": "Cibo",
+        "titolo": "Crocchette per Cani",
+        "immagine": "https://example.com/crocchette-cani.jpg",
+        "prezzo": 29.99,
+        "categoria": "Cani"
+    },
+    {
+        "tipo": "Cuccia",
+        "titolo": "Cuccia Impermeabile",
+        "immagine": "https://example.com/cuccia-impermeabile.jpg",
+        "prezzo": 49.99,
+        "categoria": "Cani"
+    },
+    {
+        "tipo": "Giochi",
+        "titolo": "Palla Rimbalzante",
+        "immagine": "https://example.com/palla-rimbalzante.jpg",
+        "prezzo": 12.50,
+        "categoria": "Cani"
+    },
+    {
+        "tipo": "Cibo",
+        "titolo": "Bocconcini per Gatti",
+        "immagine": "https://example.com/bocconcini-gatti.jpg",
+        "prezzo": 24.99,
+        "categoria": "Gatti"
+    },
+    {
+        "tipo": "Cuccia",
+        "titolo": "Cuccia Morbida per Gatti",
+        "immagine": "https://example.com/cuccia-gatti.jpg",
+        "prezzo": 39.99,
+        "categoria": "Gatti"
+    },
+    {
+        "tipo": "Giochi",
+        "titolo": "Topino di Stoffa",
+        "immagine": "https://example.com/topino-stoffa.jpg",
+        "prezzo": 8.99,
+        "categoria": "Gatti"
+    },
+    {
+        "tipo": "Prodotto Generico",
+        "titolo": "Guinzaglio Regolabile",
+        "immagine": "https://example.com/guinzaglio.jpg",
+        "prezzo": 15.00,
+        "categoria": "Cani"
+    },
+    {
+        "tipo": "Prodotto Generico",
+        "titolo": "Ciotola in Acciaio",
+        "immagine": "https://example.com/ciotola.jpg",
+        "prezzo": 10.00,
+        "categoria": "Cani"
+    }
+]
