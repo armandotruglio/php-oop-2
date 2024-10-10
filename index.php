@@ -8,19 +8,23 @@ require_once __DIR__ . "/classes/product/Food.php";
 require_once __DIR__ . "/classes/product/Kennel.php";
 require_once __DIR__ . "/classes/product/Toy.php";
 
-
+//Import json file
 $json = json_decode(file_get_contents("db/data.json"), true);
 
-$products = [];
 
+$products = [];
+//Loop to create the products
 foreach ($json as $product) {
+
     $category;
+    //Identify the product category
     if ($product["categoria"] === "Cani") {
         $category = new Dogs();
     } else {
         $category = new Cats();
     }
 
+    //Identify the type of product
     switch ($product["tipo"]) {
         case "Prodotto Generico":
             $products[] = new Product($product["titolo"], $product["immagine"], $product["prezzo"], $category);
