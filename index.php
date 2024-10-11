@@ -63,32 +63,37 @@ foreach ($json as $product) {
         <div class="container pb-5">
             <div class="row g-5">
                 <?php foreach ($products as $product) { ?>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="category d-flex justify-content-between align-items-center p-2 border-bottom">
-                                <span class="fw-bold"> Categoria: </span>
-                                <div class="category-icon">
-                                    <img src="<?= $product->getCategory()->getImage() ?>"
-                                        alt="<?= $product->getCategory()->getType() ?>" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <figure class="figure">
-                                    <img src="<?= $product->getImage() ?>"
-                                        class="figure-img img-fluid rounded img-thumbnail"
-                                        alt="<?= $product->getTitle() ?>">
-                                </figure>
-                            </div>
-                            <div class="card-title text-center fw-bold">
-                                <span><?= $product->getTitle() ?></span>
-                            </div>
-                            <div class="card-footer d-flex justify-content-between">
-                                <span><?= $product->getType() ?></span>
-                                <span class="fw-bold"><?= $product->getPrice() ?> €</span>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="category d-flex justify-content-between align-items-center p-2 border-bottom">
+                            <span class="fw-bold"> Categoria: </span>
+                            <div class="category-icon">
+                                <img src="<?= $product->getCategory()->getImage() ?>"
+                                    alt="<?= $product->getCategory()->getType() ?>" class="img-fluid">
                             </div>
                         </div>
+                        <div class="card-body">
+                            <figure class="figure">
+                                <img src="<?= $product->getImage() ?>"
+                                    class="figure-img img-fluid rounded img-thumbnail"
+                                    alt="<?= $product->getTitle() ?>">
+                            </figure>
+                        </div>
+                        <div class="card-title text-center fw-bold">
+                            <span><?= $product->getTitle() ?></span>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <span><?= $product->getType() ?></span>
+                            <span class="fw-bold"><?= $product->getPrice() ?> €</span>
+                        </div>
                     </div>
-                <?php $product->log('registered:  ' . $product->getTitle());
+                </div>
+                <?php
+                    try {
+                        $product->log($product->getTitle());
+                    } catch (Exception $exception) {
+                        echo $exception->getMessage();
+                    }
                 } ?>
             </div>
         </div>
