@@ -1,5 +1,6 @@
 <?php
-require_once "./classes/category/Category.php";
+require_once __DIR__ . "/../category/Category.php";
+require __DIR__ . "/../trait/Loggable.php";
 
 class Product
 {
@@ -8,6 +9,8 @@ class Product
     protected string $image;
     protected string $price;
     protected Category $category;
+
+    use Loggable;
 
 
     public function __construct(string $_title, string $_image, string $_price, Category $_category)

@@ -65,7 +65,7 @@ foreach ($json as $product) {
                 <?php foreach ($products as $product) { ?>
                     <div class="col-3">
                         <div class="card">
-                            <div class="category d-flex justify-content-between align-items-center p-2">
+                            <div class="category d-flex justify-content-between align-items-center p-2 border-bottom">
                                 <span class="fw-bold"> Categoria: </span>
                                 <div class="category-icon">
                                     <img src="<?= $product->getCategory()->getImage() ?>"
@@ -73,7 +73,11 @@ foreach ($json as $product) {
                                 </div>
                             </div>
                             <div class="card-body">
-                                <img src="<?= $product->getImage() ?>" alt="<?= $product->getTitle() ?>" class="img-fluid">
+                                <figure class="figure">
+                                    <img src="<?= $product->getImage() ?>"
+                                        class="figure-img img-fluid rounded img-thumbnail"
+                                        alt="<?= $product->getTitle() ?>">
+                                </figure>
                             </div>
                             <div class="card-title text-center fw-bold">
                                 <span><?= $product->getTitle() ?></span>
@@ -84,7 +88,8 @@ foreach ($json as $product) {
                             </div>
                         </div>
                     </div>
-                <?php } ?>
+                <?php $product->log('registered:  ' . $product->getTitle());
+                } ?>
             </div>
         </div>
     </div>

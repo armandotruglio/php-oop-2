@@ -2,56 +2,56 @@
     {
         "tipo": "Cibo",
         "titolo": "Crocchette per Cani",
-        "immagine": "https://example.com/crocchette-cani.jpg",
+        "immagine": "https://tinyurl.com/2v6f2avs",
         "prezzo": 29.99,
         "categoria": "Cani"
     },
     {
         "tipo": "Cuccia",
         "titolo": "Cuccia Impermeabile",
-        "immagine": "https://example.com/cuccia-impermeabile.jpg",
+        "immagine": "https://tinyurl.com/njmyu5tn",
         "prezzo": 49.99,
         "categoria": "Cani"
     },
     {
         "tipo": "Giochi",
         "titolo": "Palla Rimbalzante",
-        "immagine": "https://example.com/palla-rimbalzante.jpg",
+        "immagine": "https://tinyurl.com/5drttcap",
         "prezzo": 12.50,
         "categoria": "Cani"
     },
     {
         "tipo": "Cibo",
         "titolo": "Bocconcini per Gatti",
-        "immagine": "https://example.com/bocconcini-gatti.jpg",
+        "immagine": "https://tinyurl.com/3ahczxjv",
         "prezzo": 24.99,
         "categoria": "Gatti"
     },
     {
         "tipo": "Cuccia",
         "titolo": "Cuccia Morbida per Gatti",
-        "immagine": "https://example.com/cuccia-gatti.jpg",
+        "immagine": "https://tinyurl.com/5y8ba7pb",
         "prezzo": 39.99,
         "categoria": "Gatti"
     },
     {
         "tipo": "Giochi",
         "titolo": "Topino di Stoffa",
-        "immagine": "https://example.com/topino-stoffa.jpg",
+        "immagine": "https://tinyurl.com/yc83nt9s",
         "prezzo": 8.99,
         "categoria": "Gatti"
     },
     {
         "tipo": "Prodotto Generico",
         "titolo": "Guinzaglio Regolabile",
-        "immagine": "https://example.com/guinzaglio.jpg",
+        "immagine": "https://tinyurl.com/mwcen8hc",
         "prezzo": 15.00,
         "categoria": "Cani"
     },
     {
         "tipo": "Prodotto Generico",
         "titolo": "Ciotola in Acciaio",
-        "immagine": "https://example.com/ciotola.jpg",
+        "immagine": "https://tinyurl.com/4hwwrpv9",
         "prezzo": 10.00,
         "categoria": "Cani"
     }
